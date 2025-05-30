@@ -1,11 +1,8 @@
 import random 
-
 def number_guessing_game():
     number = random.randint(1,100)
     attempts = 0
-    
-
-    while True:
+while True:
         try: 
             guess = int(input("guess a number between 1 and 100; "))
             attempts += 1
@@ -20,5 +17,4 @@ def number_guessing_game():
                 break
         except ValueError:
             print("Please enter a valid integer between 1 and 100.")
-
 number_guessing_game()
