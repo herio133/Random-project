@@ -9,16 +9,20 @@ for quote in quotes:
     author = quote.find("small", class_="author").get_text()
     print(f"{text} — {author}") '''
 
+
 '''import requests
 from bs4 import BeautifulSoup
 url = "https://www.goodreads.com/list/show/1.Best_Books_Ever"
 headers = {"User-Agent": "Mozilla/5.0"}
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, "html.parser")
-for book in soup.select("tr[itemtype='http://schema.org/Book']")[:10]:
+for book in 
+soup.select("tr[itemtype='http://schema.org/Book']")[:10]:
     title = book.select_one("a.bookTitle span").get_text(strip=True)
     author = book.select_one("a.authorName span").get_text(strip=True)
     print(f"{title} — {author}")'''
+
+
 
 
 import requests
